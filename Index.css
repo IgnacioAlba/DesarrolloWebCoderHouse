@@ -88,18 +88,6 @@ a:hover {
   color: #d8e3e7;
 }
 
-.hamburger-menu {
-  width: 50px;
-  height: 50px;
-  background-color: #132c33;
-}
-/*Media Queries*/
-
-@media (min-width: 768px) {
-  .header__navegacion {
-    display: flex;
-  }
-}
 /* Fin Header */
 
 /* Main */
