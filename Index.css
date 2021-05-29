@@ -1,0 +1,188 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font: 62.5%;
+}
+
+body {
+  background-color: #d8e3e7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Fin General */
+
+/* Header */
+
+.header /*Caracteristicas del Header*/ {
+  background: rgb(91, 137, 147);
+  background: linear-gradient(
+    127deg,
+    rgba(91, 137, 147, 1) 0%,
+    rgba(191, 244, 255, 0.8528610354223434) 50%,
+    rgba(191, 244, 255, 1) 100%
+  );
+  display: grid;
+  grid-template-areas:
+    "logo titulo"
+    "nav nav";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 5fr 1fr;
+  justify-items: stretch;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header__logo /*Medidas del logo*/ {
+  height: 10px;
+  width: 10px;
+  margin: 10px;
+}
+
+.header__titulo /*Tipografia del titulo*/ {
+  color: #132c33;
+  font-size: 1.7rem;
+}
+
+.header__navegacion /*Caracteristicas y flex del nav*/ {
+  background-color: #132c33;
+  grid-area: nav;
+  height: 65px;
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__navegacion--lista /*Todos los elementos del nav*/ {
+  font-weight: bolder;
+  font-size: 1rem;
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+.header__navegacion--lista li {
+  color: #d8e3e7;
+}
+
+a {
+  color: #13a3ca;
+  border: 2px solid #d8e3e7;
+  padding: 5px 30px;
+  text-decoration: none;
+  transition: background 3s;
+}
+
+a:hover {
+  transition: all 1s;
+  background-color: #51c4d3;
+  color: #132c33;
+}
+
+.active {
+  background-color: #13a3ca;
+  color: #d8e3e7;
+}
+
+.hamburger-menu {
+  width: 50px;
+  height: 50px;
+  background-color: #132c33;
+}
+/*Media Queries*/
+
+@media (min-width: 768px) {
+  .header__navegacion {
+    display: flex;
+  }
+}
+/* Fin Header */
+
+/* Main */
+
+main h2 /* Titulo de cada historia*/ {
+  text-align: center;
+  color: #132c33;
+  font-size: 30px;
+}
+
+.imagenes /*Conjunto de Imagenes*/ {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.imagen /*Cada una de las imagenes*/ {
+  height: 350px;
+  width: 350px;
+}
+
+.background_celeste {
+  background-color: #51c4d3;
+  text-align: center;
+}
+
+/* Textos de historia*/
+
+.historia /*contenedor general de historias*/ {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.paddinghistoria /*Bordes generales de cada titulo*/ {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.textohistoria /*Texto justificado*/ {
+  text-align: justify;
+}
+
+/* Fin Textos de historia*/
+
+/* Fin Main */
+
+/* Footer */
+
+footer {
+  background-image: url(https://gaci.com.ar/wp-content/uploads/2020/04/FONDO-CELESTE.jpg);
+  background-position: top center;
+  height: 12rem;
+  padding: 30px;
+}
+
+.info /* Contenedor del footer*/ {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+footer h2 /* Titulo del footer*/ {
+  text-align: center;
+  color: #132c33;
+  font-size: 30px;
+}
+.info h4 /*Titulos del footer*/ {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #132c33;
+  padding-bottom: 15px;
+}
+
+.info p /*Textos del footer*/ {
+  font-size: 1rem;
+  text-align: center;
+  color: #132c33;
+}
+
+/* Fin Footer */
