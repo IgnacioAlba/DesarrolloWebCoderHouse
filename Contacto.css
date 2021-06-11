@@ -55,6 +55,8 @@ body {
 
 .header__navegacion {
   margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .header__navegacion--lista {
@@ -126,7 +128,7 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   margin: 20px;
 }
 #input  /*caracteristicas de los casilleros*/ {
-  height: 20px;
+  height: 25px;
   border: 1.5px solid #132c33;
   text-align: center;
 }

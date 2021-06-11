@@ -1,0 +1,103 @@
+.background /*fondo gradiente del header*/ {
+  background: rgb(49, 73, 79);
+  background: linear-gradient(
+    127deg,
+    rgba(49, 73, 79, 1) 0%,
+    rgba(27, 57, 65, 1) 55%,
+    rgba(19, 44, 51, 1) 100%
+  );
+}
+
+.header {
+  /*caracteristicas del header*/
+  height: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  animation-name: animation-header;
+  animation-duration: 3s;
+  animation-iteration-count: inherit;
+
+  &__logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+  }
+
+  &__navegacion {
+    margin-right: 10px;
+
+    &--lista {
+      font-weight: bolder;
+      font-size: 1rem;
+      list-style-type: none;
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  @keyframes animation-header /*Transicion del contenido del header de izquierda a derecha*/ {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+li a {
+  color: $color-secundario;
+  border: 2px solid $color-fondo-general;
+  padding: 5px 30px;
+  text-decoration: none;
+  transition: background 3s;
+}
+
+li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
+  transition: all 1s;
+  background-color: $color-terciario;
+  color: $color-principal;
+}
+.active {
+  background-color: $color-secundario;
+  color: $color-fondo-general;
+}
+
+.titulo {
+  background: rgb(49, 73, 79);
+  background: linear-gradient(
+    127deg,
+    rgba(49, 73, 79, 1) 0%,
+    rgba(27, 57, 65, 1) 55%,
+    rgba(19, 44, 51, 1) 100%
+  );
+  margin-top: 30px;
+  padding: 5px;
+  font-size: $tamaño-letra * 5;
+  text-align: center;
+  color: $color-fondo-general;
+}
+.container {
+  margin: 30px;
+
+  &__subtitulo {
+    font-size: $tamaño-letra * 6;
+    color: $color-secundario;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+.volver {
+  margin: 60px;
+  color: $color-secundario;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+main a {
+  color: $color-principal;
+}

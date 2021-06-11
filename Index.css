@@ -51,7 +51,7 @@ body {
   background-color: #132c33;
   grid-area: nav;
   height: 65px;
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
@@ -66,11 +66,11 @@ body {
   gap: 10px;
 }
 .header__navegacion--lista li {
-  color: #d8e3e7;
+  color: #13b3ca;
 }
 
 a {
-  color: #13a3ca;
+  color: #13b3ca;
   border: 2px solid #d8e3e7;
   padding: 5px 30px;
   text-decoration: none;
@@ -132,6 +132,11 @@ main h2 /* Titulo de cada historia*/ {
 
 .textohistoria /*Texto justificado*/ {
   text-align: justify;
+}
+
+.textos {
+  justify-content: center;
+  gap: 50px;
 }
 
 /* Fin Textos de historia*/
