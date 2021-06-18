@@ -9,7 +9,7 @@ html {
   font: 62.5%;
 }
 
-body {
+main {
   background-color: #d8e3e7;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,72 +17,57 @@ body {
 
 /* Header */
 
-.header /*Caracteristicas del Header*/ {
-  background: rgb(91, 137, 147);
+.background /*fondo gradiente del header*/ {
+  background: rgb(49, 73, 79);
   background: linear-gradient(
     127deg,
-    rgba(91, 137, 147, 1) 0%,
-    rgba(191, 244, 255, 0.8528610354223434) 50%,
-    rgba(191, 244, 255, 1) 100%
+    rgba(49, 73, 79, 1) 0%,
+    rgba(27, 57, 65, 1) 55%,
+    rgba(19, 44, 51, 1) 100%
   );
-  display: grid;
-  grid-template-areas:
-    "logo titulo"
-    "nav nav";
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 5fr 1fr;
-  justify-items: stretch;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
-.header__logo /*Medidas del logo*/ {
-  height: 200px;
-  width: 200px;
-  margin: 50px;
-}
-
-.header__titulo /*Tipografia del titulo*/ {
-  color: #132c33;
-  font-size: 2rem;
-}
-
-.header__navegacion /*Caracteristicas y flex del nav*/ {
-  background-color: #132c33;
-  grid-area: nav;
+.header {
+  /*caracteristicas del header*/
   height: 65px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-content: center;
 }
 
-.header__navegacion--lista /*Todos los elementos del nav*/ {
+.header__logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.header__navegacion {
+  margin-right: 10px;
+}
+
+.header__navegacion--lista {
   font-weight: bolder;
   font-size: 1rem;
   list-style-type: none;
   display: flex;
-  gap: 10px;
-}
-.header__navegacion--lista li {
-  color: #13b3ca;
+  gap: 20px;
 }
 
-a {
-  color: #13b3ca;
+li a {
+  color: #13a3ca;
   border: 2px solid #d8e3e7;
   padding: 5px 30px;
   text-decoration: none;
   transition: background 3s;
 }
 
-a:hover {
+li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   transition: all 1s;
   background-color: #51c4d3;
   color: #132c33;
 }
-
 .active {
   background-color: #13a3ca;
   color: #d8e3e7;
@@ -92,6 +77,21 @@ a:hover {
 
 /* Main */
 
+.titulo {
+  background: rgb(49, 73, 79);
+  background: linear-gradient(
+    127deg,
+    rgba(49, 73, 79, 1) 0%,
+    rgba(27, 57, 65, 1) 55%,
+    rgba(19, 44, 51, 1) 100%
+  );
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #d8e3e7;
+}
 main h2 /* Titulo de cada historia*/ {
   text-align: center;
   color: #132c33;
@@ -99,17 +99,12 @@ main h2 /* Titulo de cada historia*/ {
 }
 
 .imagenes /*Conjunto de Imagenes*/ {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 5px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 60px;
 }
-.imagen /*Cada una de las imagenes*/ {
-  height: 350px;
-  width: 350px;
+
+.imagen {
+  height: 700px;
+  background-size: cover;
 }
 
 .background_celeste {
@@ -148,7 +143,6 @@ main h2 /* Titulo de cada historia*/ {
 footer {
   background-image: url(https://gaci.com.ar/wp-content/uploads/2020/04/FONDO-CELESTE.jpg);
   background-position: top center;
-  height: 12rem;
   padding: 30px;
 }
 
