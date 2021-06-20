@@ -40,14 +40,7 @@ body {
   animation-duration: 3s;
   animation-iteration-count: inherit;
 }
-@keyframes animation-header /*Transicion del contenido del header de izquierda a derecha*/ {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
+
 .header__logo {
   height: 50px;
   width: 50px;
