@@ -16,9 +16,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  animation-name: animation-header;
-  animation-duration: 3s;
-  animation-iteration-count: inherit;
 
   &__logo {
     height: 50px;
@@ -44,7 +41,7 @@ li a {
   border: 2px solid $color-fondo-general;
   padding: 5px 30px;
   text-decoration: none;
-  transition: background 3s;
+  transition: background 2s;
 }
 
 li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
@@ -67,7 +64,7 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   );
   margin-top: 30px;
   padding: 5px;
-  font-size: $tamaño-letra * 5;
+  font-size: $letra * 5;
   text-align: center;
   color: $color-fondo-general;
 }
@@ -75,7 +72,7 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   margin: 30px;
 
   &__subtitulo {
-    font-size: $tamaño-letra * 6;
+    font-size: $letra * 5;
     color: $color-secundario;
     margin-top: 40px;
     margin-bottom: 30px;
