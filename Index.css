@@ -27,38 +27,18 @@ main {
   );
 }
 
-.header {
-  /*caracteristicas del header*/
-  height: 65px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-}
-
-.header__logo {
+.logo {
   height: 50px;
   width: 50px;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .header__navegacion {
   margin-right: 10px;
 }
 
-.header__navegacion--lista {
-  font-weight: bolder;
-  font-size: 1rem;
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-}
-
 li a {
   color: #13a3ca;
-  border: 2px solid #d8e3e7;
-  padding: 5px 30px;
   text-decoration: none;
   transition: background 3s;
 }
@@ -156,10 +136,10 @@ footer {
 footer h2 /* Titulo del footer*/ {
   text-align: center;
   color: #132c33;
-  font-size: 30px;
+  font-size: 2rem;
 }
 .info h4 /*Titulos del footer*/ {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-align: center;
   color: #132c33;
   padding-bottom: 15px;

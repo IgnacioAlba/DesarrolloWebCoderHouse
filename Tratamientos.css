@@ -27,41 +27,18 @@ body {
   );
 }
 
-.header {
-  /*caracteristicas del header*/
-  height: 65px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  animation-name: animation-header;
-  animation-duration: 3s;
-  animation-iteration-count: inherit;
-}
-
-.header__logo {
+.logo {
   height: 50px;
   width: 50px;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .header__navegacion {
   margin-right: 10px;
 }
 
-.header__navegacion--lista {
-  font-weight: bolder;
-  font-size: 1rem;
-  list-style-type: none;
-  display: flex;
-  gap: 10px;
-}
-
 li a {
   color: #13a3ca;
-  border: 2px solid #d8e3e7;
-  padding: 5px 30px;
   text-decoration: none;
   transition: background 3s;
 }

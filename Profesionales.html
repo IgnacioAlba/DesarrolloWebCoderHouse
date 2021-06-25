@@ -7,36 +7,49 @@
     <title>Profesionales odontológicos</title>
     <meta name= "description" content= "Les presentamos a nuestros profesionales, ellos cuidarán de su salud y lo harán sentir muy cómodo" />
     <meta name="keywords" content="Odontologos, Odontología, Dentistas, Profesionales, Carrera odontológica, Odontologia Lomas de Zamora">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./Profesionales.css" />
   </head>
   <body>
-    <header>
-      <body>
-        <header class="background">
-          <div class="header">
-          <img src="./Fotos/Logo.jpg" alt="Logo" class="header__logo" />
-          <nav class="header__navegacion">
-            <ul class="header__navegacion--lista">
-              <li><a href="index.html"> Home </a></li>
-              <li><a href="tratamientos"> Tratamientos</a></li>
-              <li><a class="active" href="profesionales.html"> Profesionales</a></li>
-              <li><a href="valores.html"> Valores</a></li>
-              <li><a href="contacto.html"> Contacto</a></li>
-            </ul>
-          </nav>
+    <header>     
+      <nav class="navbar navbar-expand-lg navbar-dark background">
+        <div class="container-fluid navegacion">
+          <a class="navbar-brand" href="./index.html"><img src="./Fotos/Logo.jpg" alt="Logo" class="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="profesionales.html">Profesionales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tratamientos.html">Tratamientos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="valores.html" >Valores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="contacto.html" >Contacto</a>
+              </li>
+            </ul>     
           </div>
+        </div>
+      </nav>
     </header>
     <main>
       <div class="titulo">
         <h1>PROFESIONALES</h1>
       </div>
       <section>
-        <br />
-        <div class="profesionales">
-          <div class="adriana">
+        <div class="row"> 
+          <div>
             <h3>Adriana Lobosco</h3>
           </div>
-          <div class="imagenadriana">
+          <div>
             <img
               src="Fotos/Odontologa 1.jpg"
               alt="Odontologa"
@@ -44,7 +57,7 @@
               height="200"
             />
           </div>
-          <div class="textoadriana">
+          <div>
             <ul>
               <li>Odontóloga</li>
               <li>MP.23505 / MN. 26732</li>
@@ -55,10 +68,11 @@
               </li>
             </ul>
           </div>
-          <div class="rocio">
+        </div>
+          <div>
             <h3>Rocio Fernandez Furnari</h3>
           </div>
-          <div class="imagenrocio">
+          <div >
             <img
               src="fotos/Odontologo 2.jpg"
               alt="Odontologo"
@@ -66,7 +80,7 @@
               height="200"
             />
           </div>
-          <div class="textorocio">
+          <div>
             <ul>
               <li>Odontóloga</li>
               <li>MP. 25103</li>
@@ -74,10 +88,10 @@
               <li>Especialidad en Odontología General y Odontopediatria</li>
             </ul>
           </div>
-          <div class="dina">
+          <div>
             <h3>Dina Marianela Rodríguez</h3>
           </div>
-          <div class="imagendina">
+          <div>
             <img
               src="fotos/odontologo 3.jpg"
               alt="Odontologo"
@@ -85,7 +99,7 @@
               height="200"
             />
           </div>
-          <div class="textodina">
+          <div>
             <ul>
               <li>Ortodoncista</li>
               <li>MP. 24198 / MN. 260603</li>
@@ -96,10 +110,10 @@
               </li>
             </ul>
           </div>
-          <div class="carolina">
+          <div>
             <h3>Carolina Inés Nuñez</h3>
           </div>
-          <div class="imagencarolina">
+          <div>
             <img
               src="fotos/Odontologa 4.jpeg"
               alt="Odontologa"
@@ -107,7 +121,7 @@
               height="200"
             />
           </div>
-          <div class="textocarolina">
+          <div>
             <ul>
               <li>Odontóloga</li>
               <li>MP. 32315</li>
@@ -121,5 +135,6 @@
         <h4><a href="index.html"> Volver </a></h4>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

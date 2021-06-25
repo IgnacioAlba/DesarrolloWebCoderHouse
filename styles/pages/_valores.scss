@@ -8,38 +8,13 @@
   );
 }
 
-.header {
-  /*caracteristicas del header*/
-  height: 65px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  &__logo {
-    height: 50px;
-    width: 50px;
-    margin-left: 10px;
-  }
-
-  &__navegacion {
-    margin-right: 10px;
-
-    &--lista {
-      font-weight: bolder;
-      font-size: 1rem;
-      list-style-type: none;
-      display: flex;
-      gap: 10px;
-    }
-  }
+.logo {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
 }
-
 li a {
   color: $color-secundario;
-  border: 2px solid $color-fondo-general;
-  padding: 5px 30px;
   text-decoration: none;
   transition: background 2s;
 }
