@@ -72,26 +72,28 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   color: #d8e3e7;
 }
 /* Tabla de tratamientos*/
+
 .posicion-table {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 10px;
 }
 table {
+  background-color: #132c33;
   border: 2px solid black;
   width: 50rem;
   height: 40rem;
-  margin: 40px;
+  margin: 10px;
 }
-td {
+*/ td {
   text-align: center;
-  border: 1px solid black;
+  border: 1px black;
 }
 
 th {
-  background-color: #132c33;
-  color: rgb(255, 255, 255);
   font-size: 1.2rem;
+  text-align: center;
 }
 
 /* Fin Tabla de tratamientos*/
