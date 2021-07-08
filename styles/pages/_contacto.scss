@@ -1,81 +1,46 @@
-/* Header */
+/*HEADER*/
 
 .background /*fondo gradiente del header*/ {
-  background: rgb(49, 73, 79);
-  background: linear-gradient(
-    127deg,
-    rgba(49, 73, 79, 1) 0%,
-    rgba(27, 57, 65, 1) 55%,
-    rgba(19, 44, 51, 1) 100%
-  );
+  background: $color-fondo-titulo;
 }
-
-.header {
-  /*caracteristicas del header*/
-  height: 65px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  &__navegacion {
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-
-    &-lista {
-      font-weight: bolder;
-      font-size: 1rem;
-      list-style-type: none;
-      display: flex;
-      gap: 10px;
-    }
-  }
-}
-
 .logo {
-  height: 50px;
-  width: 50px;
-  margin: 10px;
-  border-radius: 30%;
+  /*logo de la empresa*/
+  height: $imagen;
+  width: $imagen;
+  margin: $margen;
+  border-radius: $curvado-suave;
 }
-
 li a {
-  color: #13a3ca;
+  color: $color-secundario;
   text-decoration: none;
-  transition: background 3s;
+  transition: background 2s;
 }
 
 li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   transition: all 1s;
-  background-color: #51c4d3;
-  color: #132c33;
+  background-color: $color-terciario;
+  color: $color-principal;
 }
 .active {
-  background-color: #13a3ca;
-  color: #d8e3e7;
+  /*Cuando se activa una página*/
+  background-color: $color-secundario;
+  color: $color-fondo-general;
 }
 
-/* Fin Header */
-
-/* Main*/
+/*MAIN*/
 
 .contenedor_titulo {
-  background: rgb(49, 73, 79);
-  background: linear-gradient(
-    127deg,
-    rgba(49, 73, 79, 1) 0%,
-    rgba(27, 57, 65, 1) 55%,
-    rgba(19, 44, 51, 1) 100%
-  );
-  margin-top: 30px;
-  color: #d8e3e7;
+  /*Contenedor del titulo contacto*/
+  background: $color-fondo-titulo;
+  margin-top: $margen * 3;
+  margin-bottom: $margen * 3;
+  color: $color-fondo-general;
 }
 
 .titulo {
-  padding: 10px;
-  font-size: 2rem;
+  /*Titulo contacto*/
+  padding: $margen;
+  font-size: $titulo;
   font-weight: bolder;
   text-align: center;
   justify-content: center;
@@ -84,83 +49,77 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
 /* Form */
 
 .formulario /*Margen de todo el formulario*/ {
-  margin: 40px;
+  margin: $margen * 2;
 }
 
-.margen-izquierda /*Margen del contenido del formulario*/ {
-  margin-left: 40px;
-}
-.margen-casilleros /*margen de los casilleros*/ {
-  margin-left: 15px;
-}
 .margen-arriba-y-abajo {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: $margen;
+  margin-bottom: $margen;
 }
 
 .legend {
-  font-size: 2rem;
+  font-size: $letra * 6;
   font-weight: bold;
-  color: #132c33;
-  margin: 20px;
+  color: $color-principal;
+  margin: $margen * 2;
 }
 #input  /*caracteristicas de los casilleros*/ {
-  height: 25px;
-  border: 1.5px solid #132c33;
+  height: $margen * 2.5;
+  border: 1.5px solid $color-principal;
   text-align: center;
 }
 
 #input:focus /*casilleros cuando seleccionas para escribir*/ {
-  background: #132c33;
-  color: #d8e3e7;
+  background: $color-principal;
+  color: $color-fondo-general;
 }
 
 label {
-  font-size: 1.1rem;
-  color: #132c33;
+  font-size: $letra * 3.5;
+  color: $color-principal;
 }
 
 input[type="submit"],
   input[type="reset"] /*boton de enviar y reset*/ {
-  background-color: #132c33;
+  background-color: $color-principal;
   border: none;
-  color: #d8e3e7;
-  padding: 10px 20px;
+  color: $color-fondo-general;
+  padding: $margen $margen * 2;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
 }
 
-/* End Form */
+.mapa {
+  display: flex;
+  justify-content: center;
+}
+
+/*FOOTER*/
 
 .flex-datos {
+  margin-top: $margen * 3;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
-  color: #d8e3e7;
-  background: rgb(49, 73, 79);
-  background: linear-gradient(
-    127deg,
-    rgba(49, 73, 79, 1) 0%,
-    rgba(27, 57, 65, 1) 55%,
-    rgba(19, 44, 51, 1) 100%
-  );
+  color: $color-fondo-general;
+  background: $color-fondo-titulo;
 }
 
 .flex-datos__urgencia {
   text-align: center;
-  padding: 20px;
+  padding: $margen * 2;
 }
 .flex-datos__dirrecion {
   text-align: center;
-  padding: 20px;
+  padding: $margen * 2;
 }
 
 h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: $letra * 5;
+  margin-bottom: $margen * 2;
 }
 
 /*Link Volver*/
@@ -174,7 +133,3 @@ h3 {
     color: $color-principal;
   }
 }
-
-/*Fin Link volver*/
-
-/* End Main*/

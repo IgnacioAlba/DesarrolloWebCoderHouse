@@ -1,21 +1,19 @@
-/* Header */
+/*HEADER*/
 
 .background /*fondo gradiente del header*/ {
   background: $color-fondo-titulo;
 }
-
 .logo {
+  /*logo de la empresa*/
   height: $imagen;
   width: $imagen;
   margin: $margen;
   border-radius: $curvado-suave;
 }
-
 li a {
-  font-weight: $negrita-fuerte;
   color: $color-secundario;
   text-decoration: none;
-  transition: background 3s;
+  transition: background 2s;
 }
 
 li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
@@ -24,14 +22,15 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   color: $color-principal;
 }
 .active {
+  /*Cuando se activa una página*/
   background-color: $color-secundario;
   color: $color-fondo-general;
 }
 
-/* Fin Header */
+/*MAIN*/
 
-/* Main */
 .contenedor_titulo {
+  /*Contenedor del titulo tratamientos*/
   background: $color-fondo-titulo;
   margin-top: $margen * 3;
   margin-bottom: $margen * 3;
@@ -39,6 +38,7 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
 }
 
 .titulo {
+  /*Titulo tratamientos*/
   padding: $margen;
   font-size: $titulo;
   font-weight: bolder;
@@ -46,17 +46,21 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   justify-content: center;
 }
 
+/*Carrusel*/
+
 .imagen {
-  height: $imagen * 12;
+  height: $imagen * 12; /*Medida para laptop*/
 }
 
 @media screen and (max-width: 426px) {
+  /*Medida para celular*/
   .imagen {
     height: $imagen * 5;
   }
 }
 
 @media screen and (max-width: 768px) {
+  /*Medida para tablet*/
   .imagen {
     height: $imagen * 8;
   }
@@ -88,10 +92,6 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   justify-content: center;
   gap: 50px;
 }
-
-/* Fin Textos de historia*/
-
-/* Fin Main */
 
 /* Footer */
 
@@ -129,5 +129,3 @@ footer h3 /* Titulo del footer*/ {
   text-align: center;
   color: $color-principal;
 }
-
-/* Fin Footer */

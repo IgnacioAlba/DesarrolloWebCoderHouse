@@ -1,18 +1,14 @@
-.background /*fondo gradiente del header*/ {
-  background: rgb(49, 73, 79);
-  background: linear-gradient(
-    127deg,
-    rgba(49, 73, 79, 1) 0%,
-    rgba(27, 57, 65, 1) 55%,
-    rgba(19, 44, 51, 1) 100%
-  );
-}
+/*HEADER*/
 
+.background /*fondo gradiente del header*/ {
+  background: $color-fondo-titulo;
+}
 .logo {
-  height: 50px;
-  width: 50px;
-  margin: 10px;
-  border-radius: 30%;
+  /*logo de la empresa*/
+  height: $imagen;
+  width: $imagen;
+  margin: $margen;
+  border-radius: $curvado-suave;
 }
 li a {
   color: $color-secundario;
@@ -26,44 +22,83 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   color: $color-principal;
 }
 .active {
+  /*Cuando se activa una página*/
   background-color: $color-secundario;
   color: $color-fondo-general;
 }
 
+/*MAIN*/
+
 .contenedor_titulo {
-  background: rgb(49, 73, 79);
-  background: linear-gradient(
-    127deg,
-    rgba(49, 73, 79, 1) 0%,
-    rgba(27, 57, 65, 1) 55%,
-    rgba(19, 44, 51, 1) 100%
-  );
-  margin-top: 30px;
-  color: #d8e3e7;
+  /*Contenedor del titulo Valores*/
+  background: $color-fondo-titulo;
+  margin-top: $margen * 3;
+  margin-bottom: $margen * 3;
+  color: $color-fondo-general;
 }
 
 .titulo {
-  padding: 10px;
-  font-size: 2rem;
+  /*Titulo valores*/
+  padding: $margen;
+  font-size: $titulo;
   font-weight: bolder;
   text-align: center;
   justify-content: center;
 }
 
+.contenedor_general {
+  /*Contenedor de todo el contenido */
+  justify-content: center;
+  gap: 30px;
+}
+
+.contenedor_subtitulo {
+  /*Contenedor de cada titulo y texto*/
+  background-color: #51c4d32c;
+}
+
 .subtitulo {
+  /*Cada subtitulo*/
   font-size: $letra * 5;
-  color: $color-secundario;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  font-weight: $negrita-fuerte;
+  color: #084f63;
+  margin-top: $margen * 4;
+  margin-bottom: $margen * 3;
+  display: flex;
+  justify-content: center;
+}
+.ultimo_subtitulo_1 {
+  /*Ultimo subtitulo, porque es largo*/
+  font-size: $letra * 5;
+  font-weight: $negrita-fuerte;
+  color: #084f63;
+  margin-top: $margen * 4;
+  display: flex;
+  justify-content: center;
+}
+.ultimo_subtitulo_2 {
+  /*Ultimo subtitulo, porque es largo*/
+  font-size: $letra * 5;
+  font-weight: $negrita-fuerte;
+  color: #084f63;
+  margin-bottom: $margen * 3;
+  display: flex;
+  justify-content: center;
+}
+
+.texto {
+  /*Cada texto*/
+  font-size: $letra * 3;
+  font-weight: $negrita-suave;
 }
 
 .volver {
-  margin: 60px;
-  color: $color-secundario;
+  /*Boton de volver*/
+  margin: $margen * 4;
   text-align: center;
-  font-size: 1.2rem;
-}
+  font-size: $letra * 4;
 
-main a {
-  color: $color-principal;
+  a {
+    color: $color-principal;
+  }
 }

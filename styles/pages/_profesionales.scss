@@ -1,19 +1,19 @@
-/* Header */
+/*HEADER*/
 
 .background /*fondo gradiente del header*/ {
   background: $color-fondo-titulo;
 }
 .logo {
+  /*logo de la empresa*/
   height: $imagen;
   width: $imagen;
   margin: $margen;
   border-radius: $curvado-suave;
 }
-
 li a {
   color: $color-secundario;
   text-decoration: none;
-  transition: background 3s;
+  transition: background 2s;
 }
 
 li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
@@ -22,21 +22,23 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   color: $color-principal;
 }
 .active {
+  /*Cuando se activa una página*/
   background-color: $color-secundario;
   color: $color-fondo-general;
 }
 
-/* Fin Header */
-
-/* Main*/
+/*MAIN*/
 
 .contenedor_titulo {
+  /*Contenedor del titulo profesionales*/
   background: $color-fondo-titulo;
   margin-top: $margen * 3;
+  margin-bottom: $margen * 3;
   color: $color-fondo-general;
 }
 
 .titulo {
+  /*Titulo tratamientos profesionales*/
   padding: $margen;
   font-size: $titulo;
   font-weight: bolder;
@@ -75,8 +77,6 @@ h3 {
   font-weight: $negrita-fuerte;
 }
 
-/* Fin Profesionales */
-
 /*Link Volver*/
 
 .volver {
@@ -88,7 +88,3 @@ h3 {
     color: $color-principal;
   }
 }
-
-/*Fin Link volver*/
-
-/* Fin Main */

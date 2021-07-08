@@ -1,56 +1,46 @@
-/* Header */
+/*HEADER*/
 
 .background /*fondo gradiente del header*/ {
-  background: rgb(49, 73, 79);
-  background: linear-gradient(
-    127deg,
-    rgba(49, 73, 79, 1) 0%,
-    rgba(27, 57, 65, 1) 55%,
-    rgba(19, 44, 51, 1) 100%
-  );
+  background: $color-fondo-titulo;
 }
 .logo {
-  height: 50px;
-  width: 50px;
-  margin: 10px;
-  border-radius: 30%;
+  /*logo de la empresa*/
+  height: $imagen;
+  width: $imagen;
+  margin: $margen;
+  border-radius: $curvado-suave;
 }
-
 li a {
-  color: #13a3ca;
+  color: $color-secundario;
   text-decoration: none;
-  transition: background 3s;
+  transition: background 2s;
 }
 
 li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   transition: all 1s;
-  background-color: #51c4d3;
-  color: #132c33;
+  background-color: $color-terciario;
+  color: $color-principal;
 }
 .active {
-  background-color: #13a3ca;
-  color: #d8e3e7;
+  /*Cuando se activa una página*/
+  background-color: $color-secundario;
+  color: $color-fondo-general;
 }
 
-/* Fin Header */
-
-/* Main*/
+/*MAIN*/
 
 .contenedor_titulo {
-  background: rgb(49, 73, 79);
-  background: linear-gradient(
-    127deg,
-    rgba(49, 73, 79, 1) 0%,
-    rgba(27, 57, 65, 1) 55%,
-    rgba(19, 44, 51, 1) 100%
-  );
-  margin-top: 30px;
-  color: #d8e3e7;
+  /*Contenedor del titulo tratamientos*/
+  background: $color-fondo-titulo;
+  margin-top: $margen * 3;
+  margin-bottom: $margen * 3;
+  color: $color-fondo-general;
 }
 
 .titulo {
-  padding: 10px;
-  font-size: 2rem;
+  /*Titulo tratamientos*/
+  padding: $margen;
+  font-size: $titulo;
   font-weight: bolder;
   text-align: center;
   justify-content: center;
@@ -58,34 +48,28 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
 
 /* Tabla de tratamientos*/
 
-.posicion-table {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 10px;
-}
 table {
-  background-color: #132c33;
+  /*Tabla general*/
+  background-color: $color-principal;
   border: 2px solid black;
-  width: 50rem;
-  height: 40rem;
-  margin: 10px;
+  height: $imagen * 8;
 }
-*/ td {
+td {
+  /*Contenido de la tabla*/
   text-align: center;
   border: 1px black;
 }
 
 th {
-  font-size: 1.2rem;
+  /*Titulos de la tabla*/
+  font-size: $letra * 3.5;
   text-align: center;
 }
-
-/* Fin Tabla de tratamientos*/
 
 /*Link Volver*/
 
 .volver {
+  /*Boton para volver al inicio*/
   margin: $margen * 4;
   text-align: center;
   font-size: $letra * 4;
@@ -94,7 +78,3 @@ th {
     color: $color-principal;
   }
 }
-
-/*Fin Link volver*/
-
-/* Fin Main */
