@@ -1,35 +1,29 @@
 /* Header */
 
 .background /*fondo gradiente del header*/ {
-  background: rgb(49, 73, 79);
-  background: linear-gradient(
-    127deg,
-    rgba(49, 73, 79, 1) 0%,
-    rgba(27, 57, 65, 1) 55%,
-    rgba(19, 44, 51, 1) 100%
-  );
+  background: $color-fondo-titulo;
 }
 .logo {
-  height: 50px;
-  width: 50px;
-  margin: 10px;
-  border-radius: 30%;
+  height: $imagen;
+  width: $imagen;
+  margin: $margen;
+  border-radius: $curvado-suave;
 }
 
 li a {
-  color: #13a3ca;
+  color: $color-secundario;
   text-decoration: none;
   transition: background 3s;
 }
 
 li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   transition: all 1s;
-  background-color: #51c4d3;
-  color: #132c33;
+  background-color: $color-terciario;
+  color: $color-principal;
 }
 .active {
-  background-color: #13a3ca;
-  color: #d8e3e7;
+  background-color: $color-secundario;
+  color: $color-fondo-general;
 }
 
 /* Fin Header */
@@ -37,20 +31,14 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
 /* Main*/
 
 .contenedor_titulo {
-  background: rgb(49, 73, 79);
-  background: linear-gradient(
-    127deg,
-    rgba(49, 73, 79, 1) 0%,
-    rgba(27, 57, 65, 1) 55%,
-    rgba(19, 44, 51, 1) 100%
-  );
-  margin-top: 30px;
-  color: #d8e3e7;
+  background: $color-fondo-titulo;
+  margin-top: $margen * 3;
+  color: $color-fondo-general;
 }
 
 .titulo {
-  padding: 10px;
-  font-size: 2rem;
+  padding: $margen;
+  font-size: $titulo;
   font-weight: bolder;
   text-align: center;
   justify-content: center;
@@ -60,31 +48,31 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
 
 .contenedor_profesionales {
   /*contenedor de toda la sección*/
-  margin: 30px;
+  margin: $margen * 3;
 }
 
 .contenedor_profesional {
   /*contenedor de cada profesional*/
-  margin-top: 30px;
+  margin-top: $margen * 3;
 }
 .contenedor_elementos {
   /*contenedor de cada elemento*/
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: $margen * 1.5;
 }
 p {
-  font-weight: 500;
+  font-weight: $negrita-media;
 }
 .imagen {
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
+  height: $imagen * 6;
+  width: $imagen * 6;
+  border-radius: $curvado-fuerte;
 }
 h3 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: $letra * 6;
+  font-weight: $negrita-fuerte;
 }
 
 /* Fin Profesionales */
@@ -92,14 +80,13 @@ h3 {
 /*Link Volver*/
 
 .volver {
-  margin: 100px;
-  color: #13a3ca;
+  margin: $margen * 10;
   text-align: center;
-  font-size: 1.2rem;
-}
+  font-size: $letra * 4;
 
-main a {
-  color: #132c33;
+  a {
+    color: $color-principal;
+  }
 }
 
 /*Fin Link volver*/

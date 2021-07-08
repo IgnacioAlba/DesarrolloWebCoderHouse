@@ -1,5 +1,19 @@
-$unidad: 5px;
+$titulo: 35px;
+$letra: 5px;
+$margen: 10px;
+$imagen: 50px;
+$negrita-suave: 400;
+$negrita-media: 500;
+$negrita-fuerte: 600;
 $color-principal: #132c33;
 $color-secundario: #13a3ca;
 $color-terciario: #51c4d3;
 $color-fondo-general: #d8e3e7;
+$color-fondo-titulo: linear-gradient(
+  127deg,
+  rgba(49, 73, 79, 1) 0%,
+  rgba(27, 57, 65, 1) 55%,
+  rgba(19, 44, 51, 1) 100%
+);
+$curvado-suave: 30%;
+$curvado-fuerte: 50%;

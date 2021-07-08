@@ -86,14 +86,13 @@ th {
 /*Link Volver*/
 
 .volver {
-  margin: 40px;
-  color: #13a3ca;
+  margin: $margen * 4;
   text-align: center;
-  font-size: 1.2rem;
-}
+  font-size: $letra * 4;
 
-main a {
-  color: #132c33;
+  a {
+    color: $color-principal;
+  }
 }
 
 /*Fin Link volver*/
