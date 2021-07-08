@@ -14,9 +14,11 @@
   height: 50px;
   width: 50px;
   margin: 10px;
+  border-radius: 30%;
 }
 
 li a {
+  font-weight: 600;
   color: #13a3ca;
   text-decoration: none;
   transition: background 3s;
@@ -35,8 +37,7 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
 /* Fin Header */
 
 /* Main */
-
-.titulo {
+.contenedor_titulo {
   background: rgb(49, 73, 79);
   background: linear-gradient(
     127deg,
@@ -46,10 +47,15 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   );
   margin-top: 30px;
   margin-bottom: 30px;
-  padding: 5px;
-  font-size: 2rem;
-  text-align: center;
   color: #d8e3e7;
+}
+
+.titulo {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  justify-content: center;
 }
 main h2 /* Titulo de cada historia*/ {
   text-align: center;
@@ -62,7 +68,19 @@ main h2 /* Titulo de cada historia*/ {
 }
 
 .imagen {
-  background-size: cover;
+  height: 600px;
+}
+
+@media screen and (max-width: 426px) {
+  .imagen {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imagen {
+    height: 400px;
+  }
 }
 
 .background_celeste {
@@ -81,10 +99,13 @@ main h2 /* Titulo de cada historia*/ {
 .paddinghistoria /*Bordes generales de cada titulo*/ {
   padding-bottom: 20px;
   padding-top: 20px;
+  font-size: 1.8rem;
+  font-weight: bolder;
 }
 
 .textohistoria /*Texto justificado*/ {
   text-align: justify;
+  font-weight: 400;
 }
 
 .textos {
@@ -116,9 +137,11 @@ footer h2 /* Titulo del footer*/ {
   text-align: center;
   color: #132c33;
   font-size: 2rem;
+  font-weight: bold;
 }
 .info h4 /*Titulos del footer*/ {
   font-size: 1.8rem;
+  font-weight: bold;
   text-align: center;
   color: #132c33;
   padding-bottom: 15px;
@@ -126,6 +149,7 @@ footer h2 /* Titulo del footer*/ {
 
 .info p /*Textos del footer*/ {
   font-size: 1rem;
+  font-weight: 500;
   text-align: center;
   color: #132c33;
 }

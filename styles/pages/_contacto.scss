@@ -38,6 +38,7 @@
   height: 50px;
   width: 50px;
   margin: 10px;
+  border-radius: 30%;
 }
 
 li a {
@@ -60,7 +61,7 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
 
 /* Main*/
 
-.titulo {
+.contenedor_titulo {
   background: rgb(49, 73, 79);
   background: linear-gradient(
     127deg,
@@ -69,10 +70,15 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
     rgba(19, 44, 51, 1) 100%
   );
   margin-top: 30px;
-  padding: 5px;
-  font-size: 1.5rem;
-  text-align: center;
   color: #d8e3e7;
+}
+
+.titulo {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  justify-content: center;
 }
 
 /* Form */

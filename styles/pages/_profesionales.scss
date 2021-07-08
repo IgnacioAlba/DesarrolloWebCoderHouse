@@ -9,12 +9,13 @@
     rgba(19, 44, 51, 1) 100%
   );
 }
-
 .logo {
   height: 50px;
   width: 50px;
   margin: 10px;
+  border-radius: 30%;
 }
+
 li a {
   color: #13a3ca;
   text-decoration: none;
@@ -35,7 +36,7 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
 
 /* Main*/
 
-.titulo {
+.contenedor_titulo {
   background: rgb(49, 73, 79);
   background: linear-gradient(
     127deg,
@@ -44,15 +45,46 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
     rgba(19, 44, 51, 1) 100%
   );
   margin-top: 30px;
-  padding: 5px;
-  font-size: 1.5rem;
-  text-align: center;
   color: #d8e3e7;
 }
+
+.titulo {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  justify-content: center;
+}
+
 /* Profesionales */
 
+.contenedor_profesionales {
+  /*contenedor de toda la sección*/
+  margin: 30px;
+}
+
+.contenedor_profesional {
+  /*contenedor de cada profesional*/
+  margin-top: 30px;
+}
+.contenedor_elementos {
+  /*contenedor de cada elemento*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+p {
+  font-weight: 500;
+}
+.imagen {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
 h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 /* Fin Profesionales */

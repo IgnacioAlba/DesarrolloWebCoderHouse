@@ -12,6 +12,7 @@
   height: 50px;
   width: 50px;
   margin: 10px;
+  border-radius: 30%;
 }
 li a {
   color: $color-secundario;
@@ -29,7 +30,7 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
   color: $color-fondo-general;
 }
 
-.titulo {
+.contenedor_titulo {
   background: rgb(49, 73, 79);
   background: linear-gradient(
     127deg,
@@ -38,10 +39,15 @@ li a:hover /*Cambio de color y fondo pasas con el mouse*/ {
     rgba(19, 44, 51, 1) 100%
   );
   margin-top: 30px;
-  padding: 5px;
-  font-size: $letra * 5;
+  color: #d8e3e7;
+}
+
+.titulo {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bolder;
   text-align: center;
-  color: $color-fondo-general;
+  justify-content: center;
 }
 
 .subtitulo {
